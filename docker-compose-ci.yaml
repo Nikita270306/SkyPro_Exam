@@ -2,9 +2,9 @@ version: "3.9"
 
 services:
   api:
-    image: cestxvcdim/notes_app:$GITHUB_REF_NAME-$GITHUB_RUN_ID
+    image: nikitasingularity/examen:$GITHUB_REF_NAME-$GITHUB_RUN_ID
     ports:
-      - "80:80"
+      - 80:80
     volumes:
       - ./docker_config.py:/code/default_config.py
     depends_on:
